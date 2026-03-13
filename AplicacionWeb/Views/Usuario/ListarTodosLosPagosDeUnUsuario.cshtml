@@ -1,0 +1,86 @@
+﻿@using Dominio;
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
+
+
+<h1>Listado de Pagos del Usuario</h1>
+<br />
+<br />
+
+<form method="post">
+   
+
+    
+    @if (ViewBag.Pagos != null)
+    {
+        <h2>Pagos encontrados:</h2>
+        <br />
+        <br />
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Descripcion</th>
+                    <th>Método de Pago</th>
+                    <th>Fecha Hasta / Fecha Pago</th>
+                    <th>Fecha Fin</th>
+                    <th>Monto</th>
+                    <th>Tipo de Gasto</th>
+                    <th>Tipo de Pago</th>
+                   
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Pago unP in ViewBag.Pagos)
+                {
+                    if (unP is PagoRecurrente pr)
+                    {
+                        <tr>
+                            <td>@pr.Id</td>
+                            <td>@pr.Descripcion</td>
+                            <td>@pr.MetodoDePago</td>
+                            <td>@pr.FechaInicio.Date.ToShortDateString()</td>
+                            <td>
+                            @{
+                                if (pr.FechaFin != null)
+                                {
+                                    @pr.FechaFin.Value.ToShortDateString()
+                                }
+                                else
+                                {
+                                    @:Sin límite
+                                }
+                             }
+                            </td>
+                            <td>@pr.CalcularMontoMensual()</td>
+                            <td>@pr.TipoDeGasto.ToString()</td>                           
+                            <td>Recurrente</td>
+                            
+                        </tr>
+                    }
+                    else if (unP is PagoUnico pu)
+                    {
+                        <tr>
+                            <td>@pu.Id</td>
+                            <td>@pu.Descripcion</td>
+                            <td>@pu.MetodoDePago</td>
+                            <td>@pu.FechaPago.Date.ToShortDateString()</td>
+                            <td>-</td>
+                            <td>@pu.CalcularMontoTotal()</td>
+                            <td>@pu.TipoDeGasto.ToString()</td>
+                            <td>Único</td>
+                            
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
+
+</form>

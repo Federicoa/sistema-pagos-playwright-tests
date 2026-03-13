@@ -1,0 +1,40 @@
+﻿@using Dominio;
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
+
+<h1>Lista de Usuarios</h1>
+<br />
+<br />
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Nombre Completo</th>
+            <th>Email</th>
+            <th>Equipo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (ViewBag.Usuarios != null)
+        {
+            foreach (Usuario usuario in ViewBag.Usuarios)
+            {
+                <tr>
+                    <td>@usuario.NombreUsuario @usuario.Apellido</td>
+                    <td>@usuario.Email</td>
+                    <td>@usuario.MiEquipo?.NombreEquipo</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="3">No hay usuarios registrados.</td>
+            </tr>
+        }
+    </tbody>
+</table>

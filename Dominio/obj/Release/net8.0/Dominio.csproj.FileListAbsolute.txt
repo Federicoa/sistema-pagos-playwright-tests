@@ -1,0 +1,22 @@
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio V2\Obligatorio\Dominio\bin\Release\net8.0\Dominio.deps.json
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio V2\Obligatorio\Dominio\bin\Release\net8.0\Dominio.dll
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio V2\Obligatorio\Dominio\bin\Release\net8.0\Dominio.pdb
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio V2\Obligatorio\Dominio\obj\Release\net8.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio V2\Obligatorio\Dominio\obj\Release\net8.0\Dominio.AssemblyInfoInputs.cache
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio V2\Obligatorio\Dominio\obj\Release\net8.0\Dominio.AssemblyInfo.cs
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio V2\Obligatorio\Dominio\obj\Release\net8.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio V2\Obligatorio\Dominio\obj\Release\net8.0\Dominio.dll
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio V2\Obligatorio\Dominio\obj\Release\net8.0\refint\Dominio.dll
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio V2\Obligatorio\Dominio\obj\Release\net8.0\Dominio.pdb
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio V2\Obligatorio\Dominio\obj\Release\net8.0\ref\Dominio.dll
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio Programacion 2 Final\Obligatorio\Dominio\bin\Release\net8.0\Dominio.deps.json
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio Programacion 2 Final\Obligatorio\Dominio\bin\Release\net8.0\Dominio.dll
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio Programacion 2 Final\Obligatorio\Dominio\bin\Release\net8.0\Dominio.pdb
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio Programacion 2 Final\Obligatorio\Dominio\obj\Release\net8.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio Programacion 2 Final\Obligatorio\Dominio\obj\Release\net8.0\Dominio.AssemblyInfoInputs.cache
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio Programacion 2 Final\Obligatorio\Dominio\obj\Release\net8.0\Dominio.AssemblyInfo.cs
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio Programacion 2 Final\Obligatorio\Dominio\obj\Release\net8.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio Programacion 2 Final\Obligatorio\Dominio\obj\Release\net8.0\Dominio.dll
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio Programacion 2 Final\Obligatorio\Dominio\obj\Release\net8.0\refint\Dominio.dll
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio Programacion 2 Final\Obligatorio\Dominio\obj\Release\net8.0\Dominio.pdb
+C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio Programacion 2 Final\Obligatorio\Dominio\obj\Release\net8.0\ref\Dominio.dll

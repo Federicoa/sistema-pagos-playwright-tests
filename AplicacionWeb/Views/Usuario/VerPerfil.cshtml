@@ -1,0 +1,59 @@
+﻿@using Dominio;
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
+
+
+<h1>Mi Perfil</h1>
+<br />
+
+
+
+<p><strong>Rol:</strong> @ViewBag.Usuario.Rol</p>
+<p><strong>Nombre:</strong> @ViewBag.Usuario.NombreUsuario</p>
+<p><strong>Apellido:</strong> @ViewBag.Usuario.Apellido</p>
+<p><strong>Email:</strong> @ViewBag.Usuario.Email</p>
+<p><strong>Fecha de incorporación:</strong> @ViewBag.Usuario.FechaIncorporacionAEmpresa.ToShortDateString()</p>
+<p><strong>Equipo:</strong> @ViewBag.Usuario.MiEquipo.NombreEquipo</p>
+<p><strong>Gasto del mes:</strong> $@ViewBag.GastoMes</p>
+
+@if (ViewBag.Usuario.Rol == RolUsuario.GERENTE)
+{
+<h3>Miembros de mi equipo</h3>
+
+    @if (ViewBag.UsuariosDelEquipo != null && ((List<Usuario>)ViewBag.UsuariosDelEquipo).Count > 0)
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Rol</th>
+            </tr>
+        </thead>
+        <tbody>
+                @foreach (Usuario u in ViewBag.UsuariosDelEquipo)
+            {
+                <tr>
+                    <td>@u.Email</td>
+                    <td>@u.NombreUsuario</td>
+                    <td>@u.Apellido</td>
+                    <td>@u.Rol</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No hay miembros en tu equipo.</p>
+}
+}
+
+
+<br />

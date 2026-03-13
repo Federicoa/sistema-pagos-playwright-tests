@@ -1,0 +1,62 @@
+﻿@using Dominio;
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
+
+
+<h1>Alta de Usuario</h1>
+<br />
+<br />
+
+
+<form method="post">
+    Nombre
+    <br />
+    <input type="text" name="nombre" style="padding-left: 10px; width: 300px;" />
+    <br />
+    <br />
+    Apellido
+    <br />
+    <input type="text" name="apellido" style="padding-left: 10px; width: 300px;" />
+    <br />
+    <br />
+    Contraseña
+    <br />
+    <input type="password" name="contrasenia" style="padding-left: 10px; width: 300px;" />
+    <br />
+    <br />
+    Fecha de ingreso
+    <br />
+    <input type="date" name="fechaIncorporacionAEmpresa" style="padding-left: 10px; width: 300px;" />
+    <br />
+    <br />
+    Equipo
+    <br />
+    <select name="nombreEquipo" class="form-select" style="width: 300px;">
+        <option value="">-- Seleccione un equipo --</option>
+        @foreach (Equipo e in ViewBag.Equipos)
+        {
+            <option value="@e.NombreEquipo">@e.NombreEquipo</option>
+        }
+    </select>
+    <br />
+    Rol
+    <br />
+    <select name="rol" class="form-select" style="padding-left: 10px; width: 300px;">
+        <option value="">-- Seleccione un rol --</option>
+        @foreach (RolUsuario r in Enum.GetValues(typeof(RolUsuario)))
+        {
+            <option value="@r">@r</option>
+        }
+    </select>
+    <br />
+    <br />
+
+    
+    <input type="submit" value="Crear Usuario" />
+
+</form>

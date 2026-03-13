@@ -1,0 +1,60 @@
+﻿@using Dominio;
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
+
+@if (TempData["Mensaje"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Mensaje"]
+    </div>
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["Error"]
+    </div>
+}
+
+<h1>Lista de Tipo de Gastos</h1>
+<br />
+<br />
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (ViewBag.TiposDeGastos != null)
+        {
+            foreach (TipoDeGasto tipoDeGasto in ViewBag.TiposDeGastos)
+            {
+                <tr>
+                    <td>@tipoDeGasto.Nombre</td>
+                    <td>@tipoDeGasto.Descripcion</td>
+
+                    <td>
+                        <form method="post" asp-action="EliminarTipoDeGasto">
+                            <input type="hidden" name="nombre" value="@tipoDeGasto.Nombre" />
+                            <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="3">Aún no hay tipos de gastos.</td>
+            </tr>
+        }
+    </tbody>
+</table>

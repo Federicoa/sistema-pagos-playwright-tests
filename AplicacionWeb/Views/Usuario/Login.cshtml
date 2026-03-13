@@ -1,0 +1,10 @@
+﻿@if(ViewBag.Error != null)
+{
+    <div>@ViewBag.Error</div>
+}
+
+<form method="post">
+    <input type="text" placeholder="Ingrese Mail " name="email" /><br />
+    <input type="password" placeholder="Ingrese Contraseña" name="contrasenia" /><br />
+    <input type="submit" value="Iniciar Sesión" />
+</form>

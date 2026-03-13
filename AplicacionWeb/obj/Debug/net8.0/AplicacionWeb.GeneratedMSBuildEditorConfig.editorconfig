@@ -1,0 +1,89 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AplicacionWeb
+build_property.RootNamespace = AplicacionWeb
+build_property.ProjectDir = C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio Programacion 2 Final\Obligatorio\AplicacionWeb\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Pc\source\repos\ORT\Programacion2\Obligatorio Programacion 2 Final\Obligatorio\AplicacionWeb
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/Usuario/AltaPagoRecurrente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xBbHRhUGFnb1JlY3VycmVudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/Usuario/AltaPagoUnico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xBbHRhUGFnb1VuaWNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/Usuario/AltaTipoDeGasto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xBbHRhVGlwb0RlR2FzdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/Usuario/AltaUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xBbHRhVXN1YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/Usuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/Usuario/ListadoDeUsuarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMaXN0YWRvRGVVc3Vhcmlvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/Usuario/ListarPagosEquipo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMaXN0YXJQYWdvc0VxdWlwby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/Usuario/ListarTiposDeGasto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMaXN0YXJUaXBvc0RlR2FzdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/Usuario/ListarTodosLosPagosDeUnUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMaXN0YXJUb2Rvc0xvc1BhZ29zRGVVblVzdWFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/Usuario/ListarTodosLosUsuariosPorEquipo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMaXN0YXJUb2Rvc0xvc1VzdWFyaW9zUG9yRXF1aXBvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/Usuario/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/Usuario/VerPerfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xWZXJQZXJmaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/source/repos/ORT/Programacion2/Obligatorio Programacion 2 Final/Obligatorio/AplicacionWeb/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-7yn3z5cvod

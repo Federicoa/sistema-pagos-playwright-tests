@@ -1,0 +1,53 @@
+﻿@using Dominio
+
+
+<h2>Pagos del equipo</h2>
+
+<form method="get" asp-action="ListarPagosEquipo">
+    <div class="form-group">
+        <label>Mes</label>
+        <input type="number" name="mesBuscado" class="form-control"
+               min="1" max="12" value="@ViewBag.Mes" />
+    </div>
+
+    <div class="form-group">
+        <label>Año</label>
+        <input type="number" name="anioBuscado" class="form-control"
+               min="2000" max="2100" value="@ViewBag.Anio" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
+
+<hr />
+
+@if (ViewBag.Pagos != null && ((List<Pago>)ViewBag.Pagos).Count > 0)
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Usuario</th>
+                <th>Método</th>
+                <th>Tipo de Gasto</th>
+                <th>Monto</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var pago in ViewBag.Pagos)
+            {
+                <tr>
+                    <td>@pago.Usuario.Email</td>
+                    <td>@pago.MetodoDePago</td>
+                    <td>@pago.TipoDeGasto.Nombre</td>
+                    <td>@pago.MontoOrdenado()</td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="alert alert-info">No hay pagos para ese mes y año.</div>
+}

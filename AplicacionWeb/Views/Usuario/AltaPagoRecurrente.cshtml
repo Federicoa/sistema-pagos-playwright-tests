@@ -1,0 +1,60 @@
+﻿@using Dominio;
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
+
+
+<h1>Agregar Pago Recurrente</h1>
+<br />
+<br />
+
+
+<form method="post">
+    <br />
+    <br />
+    Método de Pago
+    <select name="metodoDePago" class="form-select" style="padding-left: 10px; width: 300px;">
+        @foreach (var metodo in Enum.GetValues(typeof(MetodoDePago)))
+        {
+            <option value="@metodo">@metodo</option>
+        }
+    </select>
+    <br />
+    <br />
+    Tipo de Gasto
+    <select name="tipoDeGasto" class="form-select" style="padding-left: 10px; width: 300px;">
+        @foreach (TipoDeGasto tg in ViewBag.TiposGasto)
+        {
+            <option value="@tg.Nombre">@tg.Nombre</option>
+        }
+    </select>
+    <br />
+    <br />
+    Descripción
+    <br />
+    <input type="text" name="descripcion" style="padding-left: 10px; width: 300px;" />
+    <br />
+    <br />
+    Monto
+    <br />
+    <input type="number" name="montoPago" style="padding-left: 10px; width: 300px;" />
+    <br />
+    <br />
+    Fecha Inicio
+    <br />
+    <input type="date" name="fechaInicio" style="padding-left: 10px; width: 300px;" />
+    <br />
+    <br />
+    Fecha Fin
+    <br />
+    <input type="date" name="fechaFin" style="padding-left: 10px; width: 300px;" />
+    <br />
+    <br />
+   
+
+    <button type="submit" class="btn btn-primary">Guardar Pago</button>
+</form>
