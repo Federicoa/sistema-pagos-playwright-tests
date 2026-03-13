@@ -10,3 +10,5 @@ playwright/.auth
 .env
 .vscode
 dist
+bin/
+obj/

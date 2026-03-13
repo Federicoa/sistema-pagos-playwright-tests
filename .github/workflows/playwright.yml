@@ -6,7 +6,7 @@ on:
     branches: [ main, master ]
   workflow_dispatch:
 jobs:
-  test:
+  pruebas-regresion-sistema-pagos:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
