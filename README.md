@@ -17,3 +17,6 @@ El proyecto incluye:
 • Docker y SQL Server para levantar el entorno completo
 • GitHub Actions para ejecutar las pruebas en CI
 
+![CI Pipeline](docs/pipeline.png)
+
+![Playwright Report](docs/playwright-report.png)
