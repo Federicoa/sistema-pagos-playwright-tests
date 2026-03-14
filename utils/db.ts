@@ -67,3 +67,8 @@ export async function borrarTipoGastoPorNombre(nombre: string) {
     `);
 
 }
+export async function query(query: string) {
+  const pool = await sql.connect(config);
+  const result = await pool.request().query(query);
+  return result.recordset;
+}

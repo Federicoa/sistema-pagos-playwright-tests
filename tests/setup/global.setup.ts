@@ -2,8 +2,24 @@ import { chromium, FullConfig } from '@playwright/test';
 import path from 'path';
 import { LoginPage } from '../../pages/login.page';
 import { users } from '../../data/users';
+import { query } from '../../utils/db';
 
 async function globalSetup(config: FullConfig) {
+
+   // -------- SEED TIPOS DE GASTO --------
+  await query(`
+    IF NOT EXISTS (SELECT 1 FROM TiposDeGastos)
+    BEGIN
+      INSERT INTO TiposDeGastos (Nombre)
+      VALUES 
+        ('Comida'),
+        ('Transporte'),
+        ('Servicios'),
+        ('Entretenimiento')
+    END
+  `);
+
+  
 
   const browser = await chromium.launch();
   const baseURL = config.projects[0].use?.baseURL || 'http://localhost:8080';
