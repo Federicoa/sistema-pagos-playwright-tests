@@ -8,16 +8,22 @@ async function globalSetup(config: FullConfig) {
 
    // -------- SEED TIPOS DE GASTO --------
   await query(`
-    IF NOT EXISTS (SELECT 1 FROM TiposDeGastos)
-    BEGIN
-      INSERT INTO TiposDeGastos (Nombre)
-      VALUES 
-        ('Comida'),
-        ('Transporte'),
-        ('Servicios'),
-        ('Entretenimiento')
-    END
-  `);
+IF NOT EXISTS (SELECT 1 FROM TiposDeGastos WHERE Nombre = 'Comida')
+INSERT INTO TiposDeGastos (Nombre, Descripcion)
+VALUES ('Comida', 'Gastos de comida')
+
+IF NOT EXISTS (SELECT 1 FROM TiposDeGastos WHERE Nombre = 'Transporte')
+INSERT INTO TiposDeGastos (Nombre, Descripcion)
+VALUES ('Transporte', 'Gastos de transporte')
+
+IF NOT EXISTS (SELECT 1 FROM TiposDeGastos WHERE Nombre = 'Servicios')
+INSERT INTO TiposDeGastos (Nombre, Descripcion)
+VALUES ('Servicios', 'Pago de servicios')
+
+IF NOT EXISTS (SELECT 1 FROM TiposDeGastos WHERE Nombre = 'Entretenimiento')
+INSERT INTO TiposDeGastos (Nombre, Descripcion)
+VALUES ('Entretenimiento', 'Gastos de ocio')
+`);
 
   
 
